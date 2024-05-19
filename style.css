@@ -1,7 +1,74 @@
 
 
-#body_background{
 
-background-image: url(images/wood_bg.jpg);
-
-}
+h1{
+    text-align: center;
+    margin-top: 40px;
+    font-family:cursive;
+ }
+ .container {
+     background-image: url(images/wood.jpeg);
+     height: 550px;
+     width: 60%;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     margin:100px;
+     margin-left: 300px;
+ }
+ 
+ #border{
+ border: solid 10px rgb(201, 135, 13);
+ height: 450px;
+ width: 1010px;
+ margin-left: 40px;
+ 
+ 
+ }
+  
+ .piano-container {
+     display: flex;
+     justify-content: center;
+ }
+  
+ .piano-keys-list {
+     list-style: none;
+     display: flex;
+     justify-content: center;
+ }
+ .piano-keys {
+     width:200px;
+     cursor: pointer;
+     /* position: relative; */
+     height: 250px;
+     border-radius: 10px;
+     border: 1px solid #000;
+ }
+  
+ .white-key {
+     background-color: #fff;
+     height: 400px;
+     width:100px;
+     position: relative;
+ }
+  
+ .black-key {
+     width: 68px;
+     height: 250px;
+     border-radius: 15px;
+     border-top-left-radius: 0;
+     border-top-right-radius: 0;  
+     background-color: #000;
+     z-index: 2;
+     margin: 0 -60px 0 -10px;
+     
+ }
+ #key_number{
+     font-family: 'Times New Roman', Times, serif;
+     font-size: 50px;
+     margin-top: 300px;
+     
+     text-align: center;
+ }
+ 
+ 
