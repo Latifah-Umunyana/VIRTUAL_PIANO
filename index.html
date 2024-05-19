@@ -1,0 +1,112 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Piano</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1><i>P I A N O</i></h1>
+    <div class="container">
+      <div id="border"> 
+        <div class="piano-container">
+            <ul class="piano-keys-list">
+                <li class="piano-keys white-key">
+                   <p id="key_number">F</p>
+                  </li>
+                <li class="piano-keys black-key">
+                  </li>
+                <li class="piano-keys white-key">
+                    <p id="key_number">G</p>
+                  </li>
+                <li class="piano-keys black-key">
+                  </li>
+                <li class="piano-keys white-key">
+                    <p id="key_number">A</p>
+                  </li>
+                  <li class="piano-keys black-key">
+                </li>
+              <li class="piano-keys white-key">
+                  <p id="key_number">B</p>
+                </li>
+              <li class="piano-keys white-key">
+                  <p id="key_number">C</p>
+                </li>
+              <li class="piano-keys black-key">
+                </li>
+              <li class="piano-keys white-key"
+                  data-list="10">
+                  <p id="key_number">D</p>
+                </li>
+              <li class="piano-keys black-key">
+                </li>
+              <li class="piano-keys white-key">
+                  <p id="key_number">E</p>
+                </li>
+              <li class="piano-keys white-key">
+                  <p id="key_number">F</p>
+                </li>
+              <li class="piano-keys black-key">
+                </li>
+                <li class="piano-keys white-key">
+                    <p id="key_number">G</p>
+                  </li>
+                </div>
+
+                <section>
+<div class="volume-icon">
+    <svg>
+        <g fill="none" stroke="black" stroke-width="2">
+            <path d="M50,50 L50,100 L80 ,100 L100 ,120 L110,120,L110,30
+             L100,30 L80,50 48,50" stroke-width="3"></path>
+            <path d="M120,30 A120,100 0 0,1 120,120"class="sound"></path>
+            <path d="M130,20 A120,100 0 0,1 130,130"class="sound"></path>
+            <path d="M140,10 A120,100 0 0,1 140,140"class="sound"></path>
+            <line x1="40" y1="120" x2="130" y2="10" stroke="black"
+            stroke-width="4" id="mute"></line>
+            
+        </g>
+    </svg>
+
+</div>
+<div class="volume">
+    <input type="range" class="range" value="0" min="0" max="100">
+    <span id="pervalue"></span>
+
+</div>
+    </section>             
+    </div>
+  </div>
+
+  <audio id="f-nat">
+    <source src="sounds/key03.mp3" type="audio/mp3">
+    </audio>
+    <audio id="g-nat">
+        <source src="sounds/key04.mp3" type="audio/mp3">
+    </audio>
+    <audio id="a-nat">
+        <source src="sounds/key05.mp3" type="audio/mp3">
+    </audio>
+    <audio id="b-nat">
+        <source src="sounds/key06.mp3" type="audio/mp3">
+    </audio>
+    <audio id="c-nat">
+        <source src="sounds/key04.mp3" type="audio/mp3">
+    </audio>
+    <audio id="d-nat">
+        <source src="sounds/key07.mp3" type="audio/mp3">
+    </audio>
+    <audio id="e-nat">
+        <source src="sounds/key08.mp3" type="audio/mp3">
+    </audio>
+    <audio id="f-nat">
+        <source src="sounds/key03.mp3" type="audio/mp3">
+    </audio>
+
+
+    <script src="functionality.js"></script>
+</body>
+</html>

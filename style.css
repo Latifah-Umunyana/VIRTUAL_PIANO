@@ -1,0 +1,136 @@
+
+
+li:hover{
+
+    color: rgb(173, 148, 148);
+
+}
+
+h1{
+    text-align: center;
+    margin-top: 40px;
+    font-family:cursive;
+ }
+ .container {
+     background-image: url(images/wood.jpeg);
+     height: 550px;
+     width: 60%;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     margin:100px;
+     margin-left: 300px;
+ }
+ 
+ #border{
+ border: solid 10px rgb(201, 135, 13);
+ height: 450px;
+ width: 1010px;
+ margin-left: 40px;
+ 
+ 
+ }
+  
+ .piano-container {
+     display: flex;
+     justify-content: center;
+ }
+  
+ .piano-keys-list {
+     list-style: none;
+     display: flex;
+     justify-content: center;
+ }
+ .piano-keys {
+     width:200px;
+     cursor: pointer;
+     /* position: relative; */
+     height: 250px;
+     border-radius: 10px;
+     border: 1px solid #000;
+ }
+  
+ .white-key {
+     background-color: #fff;
+     height: 400px;
+     width:100px;
+     position: relative;
+ }
+  
+ .black-key {
+     width: 68px;
+     height: 250px;
+     border-radius: 15px;
+     border-top-left-radius: 0;
+     border-top-right-radius: 0;  
+     background-color: #000;
+     z-index: 2;
+     margin: 0 -60px 0 -10px;
+     
+ }
+ #key_number{
+     font-family: 'Times New Roman', Times, serif;
+     font-size: 50px;
+     margin-top: 300px;
+     text-align: center;
+ }
+ section{
+    width: 800px;
+    height: 300px;
+    transform: translate(-50%, -50%)rotate(90deg);
+    margin-left: -200px;
+    margin-bottom: 700px;
+    padding-bottom: -20px;
+  
+
+    
+
+}
+.volume-icon{
+    width: 100px;
+    height: 50px;
+    /* float: left; */
+    padding-right: 120px;
+    transform: translate(-50px,90px) rotate(-90deg);
+}
+svg{
+    width: 200px;
+    height: 200px;
+    margin-top: -120px;
+}
+.volume{
+    width: 200px;
+    float: left;
+}
+input{
+    width: 350px;
+    -webkit-appearance: none;
+    height: 30px;
+    background: white;
+    outline: none;
+    position: relative;
+    top: 70px;
+    left: 50px;
+    overflow: hidden;
+}
+input::-webkit-slider-thumb{
+    -webkit-appearance :none;
+    width: 30px;
+    height: 30px;
+    background:black;
+    cursor: pointer;
+    box-shadow: -200px 0 0 100px black;
+}
+span{
+    position: absolute;
+    right: 350px;
+    top: 130px;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+.sound{
+    display: none;
+}
+ 
+ 
