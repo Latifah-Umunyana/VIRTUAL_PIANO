@@ -15,44 +15,44 @@
         <div class="piano-container">
             <ul class="piano-keys-list">
                 <li class="piano-keys white-key">
-                   <p id="key_number">f</p>
+                   <p id="key_number">F</p>
                   </li>
                 <li class="piano-keys black-key">
                   </li>
                 <li class="piano-keys white-key">
-                    <p id="key_number">g</p>
+                    <p id="key_number">G</p>
                   </li>
                 <li class="piano-keys black-key">
                   </li>
                 <li class="piano-keys white-key">
-                    <p id="key_number">a</p>
+                    <p id="key_number">A</p>
                   </li>
                   <li class="piano-keys black-key">
                 </li>
               <li class="piano-keys white-key">
-                  <p id="key_number">b</p>
+                  <p id="key_number">B</p>
                 </li>
               <li class="piano-keys white-key">
-                  <p id="key_number">c</p>
+                  <p id="key_number">C</p>
                 </li>
               <li class="piano-keys black-key">
                 </li>
               <li class="piano-keys white-key"
                   data-list="10">
-                  <p id="key_number">d</p>
+                  <p id="key_number">D</p>
                 </li>
               <li class="piano-keys black-key">
                 </li>
               <li class="piano-keys white-key">
-                  <p id="key_number">e</p>
+                  <p id="key_number">E</p>
                 </li>
               <li class="piano-keys white-key">
-                  <p id="key_number">f</p>
+                  <p id="key_number">F</p>
                 </li>
               <li class="piano-keys black-key">
                 </li>
                 <li class="piano-keys white-key">
-                    <p id="key_number">g</p>
+                    <p id="key_number">G</p>
                   </li>
                 </div>
 
@@ -77,38 +77,36 @@
     <span id="pervalue"></span>
 
 </div>
-    </section>
-    <script type="text/javascript">
-        var line = document.getElementsByTagName('input')[0];
-        line.addEventListener('mousemove',function(){
-            var pervalue = document.getElementById('pervalue');
-            var sp = document.getElementsByTagName('span')[0];
-            if(line.value == 0)
-            {
-                pervalue.innerHTML = "";
-                var sound = document.getElementsByClassName('sound');
-                for(var i=0; i<sound.length; i++)
-                {
-                    sound[i].style.display = "none";
-                }
-                document.getElementById('mute').style.display = "block";
-            }
-            if(line.value > 0)
-            {
-                pervalue.innerHTML = line.value + "%";
-                var sound = document.getElementsByClassName('sound');
-                for(var i=0; i<sound.length; i++)
-                {
-                    sound[i].style.display = "block";
-                }
-                document.getElementById('mute').style.display = "none";
-            }
-
-        })
-
-    </script>
-              
+    </section>             
     </div>
   </div>
+
+  <audio id="f-nat">
+    <source src="sounds/key03.mp3" type="audio/mp3">
+    </audio>
+    <audio id="g-nat">
+        <source src="sounds/key04.mp3" type="audio/mp3">
+    </audio>
+    <audio id="a-nat">
+        <source src="sounds/key05.mp3" type="audio/mp3">
+    </audio>
+    <audio id="b-nat">
+        <source src="sounds/key06.mp3" type="audio/mp3">
+    </audio>
+    <audio id="c-nat">
+        <source src="sounds/key04.mp3" type="audio/mp3">
+    </audio>
+    <audio id="d-nat">
+        <source src="sounds/key07.mp3" type="audio/mp3">
+    </audio>
+    <audio id="e-nat">
+        <source src="sounds/key08.mp3" type="audio/mp3">
+    </audio>
+    <audio id="f-nat">
+        <source src="sounds/key03.mp3" type="audio/mp3">
+    </audio>
+
+
+    <script src="functionality.js"></script>
 </body>
 </html>
