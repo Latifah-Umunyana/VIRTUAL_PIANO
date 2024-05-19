@@ -71,3 +71,102 @@ document.addEventListener('keydown',function(event){
         console.log("Byee!");
       }
     });
+
+    // recorder and play sounds
+
+    let array = [];
+
+let button = document.getElementById('recordButton');
+
+let savebutton = document.getElementById('save');
+          
+savebutton.addEventListener('keydown',function(event){
+
+  
+const letter = event.key;
+
+  if(letter === 'f'){
+
+    const play = document.getElementById('f-nat');
+
+  array.push(play)
+ 
+console.log({array});
+  }
+
+
+else if (letter === 'g'){
+
+    const play = document.getElementById('g-nat');
+
+array.push(play)
+
+}
+
+else if (letter === 'a'){
+
+const play = document.getElementById('g-nat');
+
+array.push(play)
+
+}
+
+else if (letter === 'b'){
+
+const play = document.getElementById('g-nat');
+
+array.push(play)
+
+}
+
+else if (letter === 'c'){
+
+const play = document.getElementById('g-nat');
+
+array.push(play)
+
+}
+
+else if (letter === 'd'){
+
+const play = document.getElementById('g-nat');
+
+array.push(play)
+
+}
+
+else if (letter === 'e'){
+
+const play = document.getElementById('g-nat');
+
+array.push(play)
+
+}
+
+  else{
+
+    console.log(" ");
+  }
+
+
+
+
+
+});
+
+
+
+
+button.addEventListener('click',function(){
+
+for (let song = 0; song < array.length;song++){
+
+
+array[song].play();
+
+}
+
+
+});
+
+
