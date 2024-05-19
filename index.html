@@ -55,6 +55,58 @@
                     <p id="key_number">g</p>
                   </li>
                 </div>
+
+                <section>
+<div class="volume-icon">
+    <svg>
+        <g fill="none" stroke="black" stroke-width="2">
+            <path d="M50,50 L50,100 L80 ,100 L100 ,120 L110,120,L110,30
+             L100,30 L80,50 48,50" stroke-width="3"></path>
+            <path d="M120,30 A120,100 0 0,1 120,120"class="sound"></path>
+            <path d="M130,20 A120,100 0 0,1 130,130"class="sound"></path>
+            <path d="M140,10 A120,100 0 0,1 140,140"class="sound"></path>
+            <line x1="40" y1="120" x2="130" y2="10" stroke="black"
+            stroke-width="4" id="mute"></line>
+            
+        </g>
+    </svg>
+
+</div>
+<div class="volume">
+    <input type="range" class="range" value="0" min="0" max="100">
+    <span id="pervalue"></span>
+
+</div>
+    </section>
+    <script type="text/javascript">
+        var line = document.getElementsByTagName('input')[0];
+        line.addEventListener('mousemove',function(){
+            var pervalue = document.getElementById('pervalue');
+            var sp = document.getElementsByTagName('span')[0];
+            if(line.value == 0)
+            {
+                pervalue.innerHTML = "";
+                var sound = document.getElementsByClassName('sound');
+                for(var i=0; i<sound.length; i++)
+                {
+                    sound[i].style.display = "none";
+                }
+                document.getElementById('mute').style.display = "block";
+            }
+            if(line.value > 0)
+            {
+                pervalue.innerHTML = line.value + "%";
+                var sound = document.getElementsByClassName('sound');
+                for(var i=0; i<sound.length; i++)
+                {
+                    sound[i].style.display = "block";
+                }
+                document.getElementById('mute').style.display = "none";
+            }
+
+        })
+
+    </script>
               
     </div>
   </div>
