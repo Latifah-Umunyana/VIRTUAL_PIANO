@@ -100,21 +100,25 @@ svg{
 input{
     width: 350px;
     -webkit-appearance: none;
-    height: 30px;
-    background: white;
+    height: 25px;
+    background: gray;
     outline: none;
     position: relative;
     top: 70px;
     left: 50px;
     overflow: hidden;
+    padding:2px;
+    border-radius: 20px;
 }
 input::-webkit-slider-thumb{
     -webkit-appearance :none;
-    width: 30px;
+    width: 40px;
     height: 30px;
-    background:black;
+    background:brown;
+    border-radius: 50px;
     cursor: pointer;
-    box-shadow: -200px 0 0 100px black;
+
+
 }
 span{
     position: absolute;
