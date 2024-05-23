@@ -9,104 +9,345 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1><i>P I A N O</i></h1>
-    <div class="container">
-      <div id="border"> 
-        <div class="piano-container">
-            <ul class="piano-keys-list">
-                <li class="piano-keys white-key">
-                   <p id="key_number">F</p>
-                  </li>
-                <li class="piano-keys black-key">
-                  </li>
-                <li class="piano-keys white-key">
-                    <p id="key_number">G</p>
-                  </li>
-                <li class="piano-keys black-key">
-                  </li>
-                <li class="piano-keys white-key">
-                    <p id="key_number">A</p>
-                  </li>
-                  <li class="piano-keys black-key">
-                </li>
-              <li class="piano-keys white-key">
-                  <p id="key_number">B</p>
-                </li>
-              <li class="piano-keys white-key">
-                  <p id="key_number">C</p>
-                </li>
-              <li class="piano-keys black-key">
-                </li>
-              <li class="piano-keys white-key"
-                  data-list="10">
-                  <p id="key_number">D</p>
-                </li>
-              <li class="piano-keys black-key">
-                </li>
-              <li class="piano-keys white-key">
-                  <p id="key_number">E</p>
-                </li>
-              <li class="piano-keys white-key">
-                  <p id="key_number">F</p>
-                </li>
-              <li class="piano-keys black-key">
-                </li>
-                <li class="piano-keys white-key">
-                    <p id="key_number">G</p>
-                  </li>
-                </div>
+    
 
-                <section>
-<div class="volume-icon">
-    <svg>
-        <g fill="none" stroke="black" stroke-width="2">
-            <path d="M50,50 L50,100 L80 ,100 L100 ,120 L110,120,L110,30
-             L100,30 L80,50 48,50" stroke-width="3"></path>
-            <path d="M120,30 A120,100 0 0,1 120,120"class="sound"></path>
-            <path d="M130,20 A120,100 0 0,1 130,130"class="sound"></path>
-            <path d="M140,10 A120,100 0 0,1 140,140"class="sound"></path>
-            <line x1="40" y1="120" x2="130" y2="10" stroke="black"
-            stroke-width="4" id="mute"></line>
-            
-        </g>
-    </svg>
-
-</div>
-<div class="volume">
-    <input type="range" class="range" value="0" min="0" max="100">
-    <span id="pervalue"></span>
-
-</div>
-    </section>             
+  <div id="page">
+    <div id="list">
+    <div id="line">
+    <div>
+    <button class= "keys" id="f-natural"><b>F</b></button>
     </div>
-  </div>
-
-  <audio id="f-nat">
-    <source src="sounds/key03.mp3" type="audio/mp3">
-    </audio>
-    <audio id="g-nat">
-        <source src="sounds/key04.mp3" type="audio/mp3">
-    </audio>
-    <audio id="a-nat">
-        <source src="sounds/key05.mp3" type="audio/mp3">
-    </audio>
-    <audio id="b-nat">
-        <source src="sounds/key06.mp3" type="audio/mp3">
-    </audio>
-    <audio id="c-nat">
-        <source src="sounds/key04.mp3" type="audio/mp3">
-    </audio>
-    <audio id="d-nat">
-        <source src="sounds/key07.mp3" type="audio/mp3">
-    </audio>
-    <audio id="e-nat">
-        <source src="sounds/key08.mp3" type="audio/mp3">
-    </audio>
+    <div>
+    <button class="black" id="f-g-natural"><b>F-G</b></button>
+    </div>
+    <div>
+    <button class= "keys" id="g-natural"><b>G</b></button>
+    </div>
+    <div>
+    <button class="black" id="g-a-natural">G-A</button>
+    </div>
+    <div>
+      <button class= "keys" id="a-natural"><b>A</b></button>
+    </div>
+    <div>
+    <button class="black" id="a-b-natural">A-B</button>
+    </div>
+    <div>
+    <button class= "keys" id="b-natural"><b>B</b></button>
+    </div>
+    <div>
+    <button class= "keys" id="c-natural"><b>C</b></button>
+    </div>
+    <div>
+    <button class="black" id="c-d-natural">C-D</button>
+    </div>
+    <div>
+    <button class= "keys" id="d-natural"><b>D</b></button>
+    </div>
+    <div>
+    <button class="black" id="d-e-natural"><b>D-E</b></button>
+    </div>
+    <div>
+    <button class= "keys" id="e-natural"><b>E</b></button>
+    </div>
+    <div>
+    <button class= "keys" id="f-natural"><b>F</b></button>
+    </div>
+    <div>
+      <button class="black" id="f-g-natural"><b>F-G</b></button>
+    </div>
+    <div>
+      <button class= "keys" id="g-natural"><b>G</b></button>
+      </div>
+    </div>
+    </div>
+    <div>
+      <button id="save"><img src="images/record.jpeg" alt="saveFile" id="saveFile"></button>
+    </div>
+    <div>
+      <button id="play"><img src="images/play.jpeg" alt="play" id="playButton"></button>
+      </div>
+    </div>
     <audio id="f-nat">
-        <source src="sounds/key03.mp3" type="audio/mp3">
-    </audio>
-
-
+      <source src="key01.ogg" type="audio/mp3">
+      </audio>
+      <audio id="f-g-nat">
+        <source src="key17.mp3" type="audio/mp3">
+        </audio>
+      <audio id="g-nat">
+          <source src="key06.mp3" type="audio/mp3">
+      </audio>
+      <audio id="g-a-nat">
+        <source src="key15.mp3" type="audio/mp3">
+        </audio>
+      <audio id="a-nat">
+          <source src="key09.mp3" type="audio/mp3">
+      </audio>
+      <audio id="a-b-nat">
+        <source src="key11.mp3" type="audio/mp3">
+        </audio>
+      <audio id="b-nat">
+          <source src="key13.mp3" type="audio/mp3">
+      </audio>
+      <audio id="c-nat">
+          <source src="key14.mp3" type="audio/mp3">
+      </audio>
+      <audio id="c-d-nat">
+        <source src="key20.mp3" type="audio/mp3">
+        </audio>
+      <audio id="d-nat">
+          <source src="key15.mp3" type="audio/mp3">
+      </audio>
+      <audio id="d-e-nat">
+        <source src="key23.mp3" type="audio/mp3">
+        </audio>
+      <audio id="e-nat">
+          <source src="key17.mp3" type="audio/mp3">
+      </audio>
+      <audio id="f-nat">
+          <source src="key24.mp3" type="audio/mp3">
+      </audio>
+        <script>
+    let array = [];
+    let button = document.getElementById('play');
+    let savebutton = document.getElementById('save');
+    // Play using Click Sounds
+    const buttons = document.getElementsByTagName("button");
+    const buttonPressed = event => {
+     let letter = event.target.id
+     if(letter === 'f-natural'){
+    const play = document.getElementById('f-nat');
+    play.currentTime = 0;
+    play.play();
+    }
+    else if(letter === 'f-g-natural'){
+    const play = document.getElementById('f-g-nat');
+    play.currentTime = 0;
+    play.play();
+    }
+    else if(letter === 'g-natural'){
+    const play = document.getElementById('g-nat');
+    play.currentTime = 0;
+    play.play();
+    }
+    else if(letter === 'g-a-natural'){
+    const play = document.getElementById('g-a-nat');
+    play.currentTime = 0;
+    play.play();
+    }
+    else if(letter === 'a-natural'){
+    const play = document.getElementById('a-nat');
+    play.currentTime = 0;
+    play.play();
+    }
+    else if(letter === 'a-b-natural'){
+    const play = document.getElementById('a-b-nat');
+    play.currentTime = 0;
+    play.play();
+    }
+    else if(letter === 'b-natural'){
+    const play = document.getElementById('b-nat');
+    play.currentTime = 0;
+    play.play();
+    }
+    else if(letter === 'c-natural'){
+    const play = document.getElementById('c-nat');
+    play.currentTime = 0;
+    play.play();
+    }
+    else if(letter === 'c-d-natural'){
+    const play = document.getElementById('c-d-nat');
+    play.currentTime = 0;
+    play.play();
+    }
+    else if(letter === 'd-natural'){
+    const play = document.getElementById('d-nat');
+    play.currentTime = 0;
+    play.play();
+    }
+    else if(letter === 'd-e-natural'){
+    const play = document.getElementById('d-e-nat');
+    play.currentTime = 0;
+    play.play();
+    }
+    else if(letter === 'e-natural'){
+    const play = document.getElementById('e-nat');
+    play.currentTime = 0;
+    play.play();
+    }
+    else{
+    return;
+    }
+    }
+    for (let button of buttons) {
+      button.addEventListener("click", buttonPressed);
+    }
+    // play using keyboard keys
+    document.addEventListener('keydown',function(event){
+        const letter = event.key;
+          if(letter === 'f'){
+            const play = document.getElementById('f-nat');
+            play.currentTime = 0;
+            play.play();
+          }
+          else if(letter === 'j'){
+          const play = document.getElementById('f-g-nat');
+          play.currentTime = 0;
+          play.play();
+        }
+        else if(letter === 'g'){
+          const play = document.getElementById('g-nat');
+          play.currentTime = 0;
+          play.play();
+        }
+        else if(letter === 'k'){
+          const play = document.getElementById('g-a-nat');
+          play.currentTime = 0;
+          play.play();
+        }
+        else if(letter === 'a'){
+          const play = document.getElementById('a-nat');
+          play.currentTime = 0;
+          play.play();
+        }
+        else if(letter === 'm'){
+          const play = document.getElementById('a-b-nat');
+          play.currentTime = 0;
+          play.play();
+        }
+        else if(letter === 'b'){
+          const play = document.getElementById('b-nat');
+          play.currentTime = 0;
+          play.play();
+        }
+        else if(letter === 'c'){
+          const play = document.getElementById('c-nat');
+          play.currentTime = 0;
+          play.play();
+        }
+        else if(letter === 'l'){
+          const play = document.getElementById('c-d-nat');
+          play.currentTime = 0;
+          play.play();
+        }
+        else if(letter === 'd'){
+          const play = document.getElementById('d-nat');
+          play.currentTime = 0;
+          play.play();
+        }
+        else if(letter === 'o'){
+          const play = document.getElementById('d-e-nat');
+          play.currentTime = 0;
+          play.play();
+        }
+        else if(letter === 'e'){
+          const play = document.getElementById('e-nat');
+          play.currentTime = 0;
+          play.play();
+        }
+        else if(letter === 'f'){
+          const play = document.getElementById('f-nat');
+          play.currentTime = 0;
+          play.play();
+        }
+          else{
+        return;
+          }
+        });
+    // record while playing with keyboard keys
+    savebutton.addEventListener('keydown',function(event){
+    const letter = event.key;
+      if(letter === 'f'){
+        const play = document.getElementById('f-nat');
+      array.push(play)
+    console.log({array});
+      }
+    else if (letter === 'g'){
+        const play = document.getElementById('g-nat');
+    array.push(play)
+    }
+    else if (letter === 'a'){
+    const play = document.getElementById('g-nat');
+    array.push(play)
+    }
+    else if (letter === 'b'){
+    const play = document.getElementById('g-nat');
+    array.push(play)
+    }
+    else if (letter === 'c'){
+    const play = document.getElementById('g-nat');
+    array.push(play);
+    }
+    else if (letter === 'd'){
+    const play = document.getElementById('g-nat');
+    array.push(play);
+    }
+    else if (letter === 'e'){
+    const play = document.getElementById('g-nat');
+    array.push(play);
+    }
+      else{
+        return;
+      }
+    });
+    // record while using clicks
+    savebutton.addEventListener('click',function(event){
+    const letter = event.target;
+    console.log(letter);
+      if(letter === 'f-natural'){
+        const play = document.getElementById('f-nat');
+      array.push(play)
+    console.log({array});
+      }
+    else if (letter === 'g-natural'){
+        const play = document.getElementById('g-nat');
+    array.push(play)
+    }
+    else if (letter === 'a-natural'){
+    const play = document.getElementById('g-nat');
+    array.push(play)
+    }
+    else if (letter === 'b-natural'){
+    const play = document.getElementById('g-nat');
+    array.push(play)
+    }
+    else if (letter === 'c-natural'){
+    const play = document.getElementById('g-nat');
+    array.push(play);
+    }
+    else if (letter === 'd-natural'){
+    const play = document.getElementById('g-nat');
+    array.push(play);
+    }
+    else if (letter === 'f-natural'){
+    const play = document.getElementById('g-nat');
+    array.push(play);
+    }
+      else{
+        return;
+      }
+    });
+    button.addEventListener('keydown',function(){
+    for (let song = 0; song < array.length;song++){
+    array[song].play();
+    }
+    });
+    document.addEventListener('click',function(){
+    for (let song = 0; song < array.length;song++){
+    array[song].play();
+    }
+    });
+        </script>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <script src="functionality.js"></script>
 </body>
 </html>

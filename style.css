@@ -1,136 +1,227 @@
+body{
+    margin-left: 50px;
+    }
+    .keys{
+    border: solid 1px;
+    /* margin-top: -50px; */
+    padding: 450px 50px 10px 35px;
+    background-color: white;
+    border-radius: 10px;
+    }
+    .black{
+    position: absolute;
+    top: 172px;
+    margin-left: -30px;
+    border: solid 1px;
+    padding: 250px 25px 10px 25px;
+    background-color: black;
+    border-radius: 10px;
+    }
+    button:active{
+    background-color: rgb(223, 216, 216);
+    }
+    #list{
+    padding-top: 10px;
+    padding: 50px 280px 45px 60px;
+    background-image: url(images/wood-bg.jpeg);
+    width: 750px;
+    }
+    #saveFile{
+    width: 50px;
+    height: 45px;
+    }
+    #save{
+    border: solid 1px white ;
+    }
+    #playButton{
+      height: 50px;
+      width: 50px;
+    }
+    #play{
+    border: solid 1px white;
+    }
+    #line{
+    border: solid 7px rgb(238, 168, 37);
+    height: 480px;
+    width: 870px;
+    display: flex;
+    gap: 0.1px;
+    padding: 50px;
+    }
+    #page{
+    display: flex;
+    padding:58px 200px;
+    }
 
-
-li:hover{
-
-    color: rgb(173, 148, 148);
-
-}
-
-h1{
-    text-align: center;
-    margin-top: 40px;
-    font-family:cursive;
- }
- .container {
-     background-image: url(images/wood.jpeg);
-     height: 550px;
-     width: 60%;
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
-     margin:100px;
-     margin-left: 300px;
- }
- 
- #border{
- border: solid 10px rgb(201, 135, 13);
- height: 450px;
- width: 1010px;
- margin-left: 40px;
- 
- 
- }
-  
- .piano-container {
-     display: flex;
-     justify-content: center;
- }
-  
- .piano-keys-list {
-     list-style: none;
-     display: flex;
-     justify-content: center;
- }
- .piano-keys {
-     width:200px;
-     cursor: pointer;
-     /* position: relative; */
-     height: 250px;
-     border-radius: 10px;
-     border: 1px solid #000;
- }
-  
- .white-key {
-     background-color: #fff;
-     height: 400px;
-     width:100px;
-     position: relative;
- }
-  
- .black-key {
-     width: 68px;
-     height: 250px;
-     border-radius: 15px;
-     border-top-left-radius: 0;
-     border-top-right-radius: 0;  
-     background-color: #000;
-     z-index: 2;
-     margin: 0 -60px 0 -10px;
-     
- }
- #key_number{
-     font-family: 'Times New Roman', Times, serif;
-     font-size: 50px;
-     margin-top: 300px;
-     text-align: center;
- }
- section{
-    width: 800px;
+    @media screen and(min-width:480px) and(max-width:320px){
+        body{
+            margin-left: none;
+            }
+            .keys{
+            border: solid 1px;
+            /* margin-top: -50px; */
+            padding: 70px 5px 5px 15px;
+            background-color: white;
+            border-radius: 5px;
+            }
+            .black{
+            position: absolute;
+            top: 80px;
+            margin-left: -30px;
+            border: solid 1px;
+            padding: 130px 10px 5px 15px;
+            background-color: black;
+            border-radius: 5px;
+            }
+            button:active{
+            background-color: rgb(223, 216, 216);
+            }
+            #list{
+            padding-top: 5px;
+            padding: 8px 80px 5px 5px;
+            background-image: url(images/wood-bg.jpeg);
+            width: 180px;
+            }
+            #saveFile{
+            width: 10px;
+            height: 10px;
+            }
+            #save{
+            border: solid 1px white ;
+            }
+            #playButton{
+              height: 8px;
+              width: 10px;
+            }
+            #play{
+            border: solid 1px white;
+            }
+            #line{
+            border: solid 7px rgb(238, 168, 37);
+            height: 100px;
+            width: 300px;
+            display: wrap;
+            gap: 0.1px;
+            padding: 10px;
+            }
+            #page{
+            display: wrap;
+            padding:20px 50px;
+            }
+        }
+@media screen and(min-width:481px)and(max-width:768px){
+  body{
+    margin-left: 20px;
+    }
+    .keys{
+    border: solid 1px;
+    /* margin-top: -50px; */
+    padding: 100px 40px 5px 25px;
+    background-color: white;
+    border-radius: 5px;
+    }
+    .black{
+    position: absolute;
+    top: 100px;
+    margin-left: -30px;
+    border: solid 1px;
+    padding: 200px 20px 5px 20px;
+    background-color: black;
+    border-radius: 5px;
+    }
+    button:active{
+    background-color: rgb(223, 216, 216);
+    }
+    #list{
+    padding-top: 8px;
+    padding: 30px 100px 30px 30px;
+    background-image: url(images/wood-bg.jpeg);
+    width: 500px;
+    }
+    #saveFile{
+    width: 30px;
+    height: 20px;
+    }
+    #save{
+    border: solid 1px white ;
+    }
+    #playButton{
+      height: 20px;
+      width: 30px;
+    }
+    #play{
+    border: solid 1px white;
+    }
+    #line{
+    border: solid 7px rgb(238, 168, 37);
     height: 300px;
-    transform: translate(-50%, -50%)rotate(90deg);
-    margin-left: -200px;
-    margin-bottom: 700px;
-    padding-bottom: -20px;
-  
+    width: 370px;
+    display: wrap;
+    gap: 0.1px;
+    padding: 20px;
+    }
+    #page{
+    display: wrap;
+    padding:38px 100px;
+    }
+
+}   
+
+@media screen and(min-width:768px)and(max-width:1025px){
+  body{
+    margin-left: 30px;
+    }
+    .keys{
+    border: solid 1px;
+    /* margin-top: -50px; */
+    padding: 200px 40px 8px 25px;
+    background-color: white;
+    border-radius: 5px;
+    }
+    .black{
+    position: absolute;
+    top: 122px;
+    margin-left: -30px;
+    border: solid 1px;
+    padding: 200px 20px 10px 20px;
+    background-color: black;
+    border-radius: 10px;
+    }
+    button:active{
+    background-color: rgb(223, 216, 216);
+    }
+    #list{
+    padding-top: 8px;
+    padding: 40px 100px 35px 50px;
+    background-image: url(images/wood-bg.jpeg);
+    width: 500px;
+    }
+    #saveFile{
+    width: 40px;
+    height: 30px;
+    }
+    #save{
+    border: solid 1px white ;
+    }
+    #playButton{
+      height: 30px;
+      width: 20px;
+    }
+    #play{
+    border: solid 1px white;
+    }
+    #line{
+    border: solid 7px rgb(238, 168, 37);
+    height: 300px;
+    width: 500px;
+    display: wrap;
+    gap: 0.1px;
+    padding: 40px;
+    }
+    #page{
+    display: wrap;
+    padding:38px 100px;
+    }
+}
 
     
-
-}
-.volume-icon{
-    width: 100px;
-    height: 50px;
-    /* float: left; */
-    padding-right: 120px;
-    transform: translate(-50px,90px) rotate(-90deg);
-}
-svg{
-    width: 200px;
-    height: 200px;
-    margin-top: -120px;
-}
-.volume{
-    width: 200px;
-    float: left;
-}
-input{
-    width: 350px;
-    -webkit-appearance: none;
-    height: 30px;
-    background: white;
-    outline: none;
-    position: relative;
-    top: 70px;
-    left: 50px;
-    overflow: hidden;
-}
-input::-webkit-slider-thumb{
-    -webkit-appearance :none;
-    width: 30px;
-    height: 30px;
-    background:black;
-    cursor: pointer;
-    box-shadow: -200px 0 0 100px black;
-}
-span{
-    position: absolute;
-    right: 350px;
-    top: 130px;
-    font-size: 20px;
-    font-weight: bold;
-
-}
-.sound{
-    display: none;
-}
- 
- 
